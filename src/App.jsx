@@ -40,7 +40,7 @@ function App() {
 "Walk the Spanish Steps at night",] },
 
 
-    { img:Paris, title: "Paris, France", shortDesc: "City of lights, love, and legendary croissants.", longDesc: "Climb the Eiffel Tower at dusk, wander Montmartre, and picnic under cherry blossoms along the Seine.", tips: ["Best time: April - June","Sunset cruise on the Seine",
+    { img:Paris, title: "Paris, France", shortDesc: "City of lights, love, and legendary croissants.", longDesc: "Climb the Eiffel Tower at dusk, wander Montmartre, and picnic under cherry blossoms along the Seine — enchanting and timeless.", tips: ["Best time: April - June","Sunset cruise on the Seine",
 "Macarons from Pierre Hermé",
 "Free Louvre entry 1st Sunday",] },
 

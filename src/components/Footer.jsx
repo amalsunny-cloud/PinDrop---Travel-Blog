@@ -1,4 +1,11 @@
 // src/components/Footer.jsx
+
+import YouTube from '../assets/youtube3.png'
+import Instagram from '../assets/instagram3.png'
+import Twitter from '../assets/twitter3.png'
+import FaceBook from '../assets/facebook3.png'
+
+
 export default function Footer() {
   return (
     <footer className="bg-slate-200 dark:bg-gray-800 text-gray-800 dark:text-white pt-8 transition-colors duration-300 border-t" id="footer">
@@ -14,19 +21,19 @@ export default function Footer() {
             <div className="flex justify-center md:justify-start space-x-4">
               <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
                 <span className="sr-only">Facebook</span>
-                <img src="src/assets/facebook.png" alt="" className="w-6"/>
+                <img src={FaceBook} alt="" className="w-6"/>
               </a>
               <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
                 <span className="sr-only">Twitter</span>
-                <img src="src/assets/twitter.png" alt="" className="w-6"/>
+                <img src={Twitter} alt="" className="w-6"/>
               </a>
               <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
                 <span className="sr-only">Instagram</span>
-                <img src="src/assets/instagram.png" alt="" className="w-6"/>
+                <img src={Instagram} alt="" className="w-6"/>
               </a>
               <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
                 <span className="sr-only">YouTube</span>
-                <img src="src/assets/youtube.png" alt="" className="w-6"/>
+                <img src={YouTube} alt="" className="w-6"/>
               </a>
             </div>
           </div>
