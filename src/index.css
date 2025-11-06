@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+.page-break {
+  page-break-before: always;
+}
+.pdf-page * {
+  visibility: visible !important;
+}
