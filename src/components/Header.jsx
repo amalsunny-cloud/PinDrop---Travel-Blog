@@ -1,5 +1,6 @@
 // src/components/Header.jsx
 import { useState, useEffect } from "react";
+import PinDrop from '../assets/PinDrop.png'
 
 export default function Header() {
   const [isDark, setIsDark] = useState(false);
@@ -20,12 +21,16 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-lg z-50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
         <div className="flex items-center gap-3">
+
           <img 
-            src="/src/assets/PinDrop.png" 
+            src={PinDrop}
             alt="PinDrop Logo" 
-            className="h-10 w-10 object-contain" // Adjust height/width as needed
+            className="h-10 w-10 object-contain" 
           />
+
+
           <h1 className="text-2xl font-bold text-gray-900 dark:text-white hover:text-teal-600 transition-colors select-none">
             PinDrop
           </h1>
