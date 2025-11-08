@@ -1,4 +1,3 @@
-// src/components/DestinationCard.jsx
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";

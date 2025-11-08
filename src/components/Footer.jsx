@@ -1,4 +1,3 @@
-// src/components/Footer.jsx
 
 import YouTube from '../assets/youtube3.png'
 import Instagram from '../assets/instagram3.png'

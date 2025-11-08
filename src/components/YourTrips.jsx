@@ -1,4 +1,3 @@
-// src/components/YourTrips.jsx
 import { useRef } from "react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
@@ -55,7 +54,6 @@ export default function YourTrips({ savedTrips = [], destinations = [] }) {
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-14">
-      {/* Hidden PDF content */}
       <div ref={pdfRef} style={{ position: "absolute", left: "-9999px", top: "-9999px" }}>
         {saved.map((d, i) => (
           <div
@@ -65,7 +63,7 @@ export default function YourTrips({ savedTrips = [], destinations = [] }) {
               display: "none", 
               width: "210mm", 
               minHeight: "297mm",
-              padding: "5mm 20mm 20mm 20mm", // Reduced top padding to lift content
+              padding: "5mm 20mm 20mm 20mm", 
               background: "white", 
               color: "black",
               boxSizing: "border-box"
@@ -105,7 +103,7 @@ export default function YourTrips({ savedTrips = [], destinations = [] }) {
         ))}
       </div>
 
-      {/* Visible Your Trips section */}
+      {/* Your Trips section */}
       {savedTrips.length > 0 && (
         <div className="bg-gradient-to-r from-teal-600 to-cyan-600 p-8 md:p-12 rounded-3xl text-center shadow-2xl">
           <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white select-none">

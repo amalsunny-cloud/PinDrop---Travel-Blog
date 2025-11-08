@@ -27,12 +27,10 @@ export default function Banner() {
     }
   ];
 
-  // Auto-advance slides
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000); // Change slide every 5 seconds
-
+    }, 5000); 
     return () => clearInterval(interval);
   }, [slides.length]);
 
@@ -48,14 +46,13 @@ export default function Banner() {
     setCurrentSlide(index);
   };
 
-  // Smoother variants for slide transitions
   const slideVariants = {
     enter: { opacity: 0, scale: 1.05 },
     center: { opacity: 1, scale: 1 },
     exit: { opacity: 0, scale: 0.95 }
   };
 
-  // Staggered text animation
+  //  text animation
   const textVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: (i) => ({
@@ -88,7 +85,7 @@ export default function Banner() {
           />
         </AnimatePresence>
 
-        {/* Dark overlay with subtle fade */}
+        {/* Dark overlay */}
         <motion.div 
           className="absolute inset-0 bg-black"
           initial={{ opacity: 0.4 }}
@@ -96,7 +93,7 @@ export default function Banner() {
           transition={{ duration: 0.8, ease: "easeInOut" }}
         />
 
-        {/* Navigation Arrows - Smoother hover */}
+        {/* Navigation arrows */}
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
@@ -119,7 +116,7 @@ export default function Banner() {
           </svg>
         </motion.button>
 
-        {/* Slide Indicators - Smoother scale & opacity */}
+        {/* Slide Indicators */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-3">
           {slides.map((_, index) => (
             <motion.button
@@ -135,7 +132,6 @@ export default function Banner() {
           ))}
         </div>
 
-        {/* Content - Staggered entrance */}
         <div className="relative z-10 h-full flex items-center justify-center text-white">
           <div className="text-center px-4 max-w-4xl mx-auto">
             <AnimatePresence mode="wait">
@@ -177,7 +173,7 @@ export default function Banner() {
           </div>
         </div>
 
-        {/* Scroll indicator - Smoother bounce */}
+        {/* Scroll indicator */}
         <motion.a
           animate={{ y: [0, 8, 0] }}
           transition={{ 
@@ -188,9 +184,7 @@ export default function Banner() {
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
           href="#destinations"
         >
-          {/* <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg> */}
+          
         </motion.a>
       </div>
     </section>

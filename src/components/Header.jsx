@@ -1,4 +1,3 @@
-// src/components/Header.jsx
 import { useState, useEffect } from "react";
 import PinDrop from '../assets/PinDrop.png'
 
@@ -6,7 +5,6 @@ export default function Header() {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    // Check if dark mode is enabled on component mount
     if (document.documentElement.classList.contains('dark')) {
       setIsDark(true);
     }

@@ -21,7 +21,6 @@ function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [savedTrips, setSavedTrips] = useState([]);
 
-  // Load saved trips
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem("pinDropTrips") || "[]");
     setSavedTrips(saved);
@@ -71,7 +70,7 @@ function App() {
         <section id="destinations" className="py-16 bg-gradient-to-br from-ivory via-snow to-ghost dark:from-gray-900 dark:to-gray-700">
           <div className="max-w-7xl mx-auto px-4">
 
-            {/* LIVE SEARCH */}
+            {/* SEARCH */}
             <div className="max-w-2xl mx-auto my-12">
               <input
                 type="text"
